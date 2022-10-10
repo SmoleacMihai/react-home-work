@@ -7,10 +7,11 @@ import HomePage from './pages/home';
 import ContactsPage from './pages/contacts';
 import ProfilePage from './pages/profile';
 import AboutPage from "./pages/about";
+import ProductsPage from "./pages/products";
+import ShopingCartPage from "./pages/shopingCart";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
 } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -29,7 +30,16 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <AboutPage/>,
+  },
+  {
+    path: "/products",
+    element: <ProductsPage />,
+  },
+  {
+    path: "/shopping-cart",
+    element: <ShopingCartPage />,
   }
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
