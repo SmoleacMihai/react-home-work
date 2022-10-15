@@ -1,14 +1,12 @@
-import { Link } from "react-router-dom";
-import navSettings from "../data/navBar"
-
-const NavBar = () => {
-  return ( 
-    <nav>
-      {
-        navSettings.map(object => <Link to={object.linkTo}>{object.name}</Link>)
-      }
-    </nav>
-   );
+import { Link } from 'react-router-dom';
+export function NavBar(){
+    return (
+        <nav>
+            <Link to="/">Home</Link>
+            <Link to="/contacts">Contacts</Link>
+            <Link to="/profile">Profile</Link>
+            <Link to="/products">Products</Link>
+            <Link to="/cart">Shopping cart</Link>
+        </nav>
+    )
 }
- 
-export default NavBar;

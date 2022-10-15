@@ -1,45 +1,41 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
-import './App.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HomePage from './pages/home';
-import ContactsPage from './pages/contacts';
-import ProfilePage from './pages/profile';
-import AboutPage from "./pages/about";
-import ProductsPage from "./pages/products";
-import ShopingCartPage from "./pages/shopingCart";
+import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
+  Route,
 } from "react-router-dom";
+
+import HomePage from './pages/home';
+import ContactsPage from './pages/contacts';
+import ProfilePage from './pages/profile';
+import ProductsPage from './pages/products';
+import ShoppingCartPage from './pages/cart';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage/>,
+    element: <HomePage></HomePage>,
   },
   {
     path: "/contacts",
-    element: <ContactsPage/>,
+    element: <ContactsPage></ContactsPage>,
   },
   {
     path: "/profile",
-    element: <ProfilePage/>,
-  },
-  {
-    path: "/about",
-    element: <AboutPage/>,
+    element: <ProfilePage></ProfilePage>,
   },
   {
     path: "/products",
-    element: <ProductsPage />,
+    element:<ProductsPage/>,
   },
   {
-    path: "/shopping-cart",
-    element: <ShopingCartPage />,
+    path: "/cart",
+    element: <ShoppingCartPage/>,
   }
-
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

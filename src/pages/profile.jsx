@@ -1,14 +1,11 @@
-import NavBar from "../components/Navbar";
+import { NavBar } from "../components/NavBar";
 
-const ProfilePage = () => {
-  return ( 
-    <>
-      <NavBar/>
-      <div className="main">
-        <h1>Your personal information</h1>
-      </div>
-    </>
-   );
+export default function ProfilePage(){
+    return (
+        <>
+            <NavBar/>
+            <div>This is profile page</div>
+        </>
+        
+    )
 }
- 
-export default ProfilePage;

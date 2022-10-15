@@ -1,26 +1,12 @@
-nav {
-  padding: 20px;
+nav{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
-a {
-  text-decoration: none;
-}
-
-nav > a {
-  background-color: black;
-  color: orange;
-  font-size: 23px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-inline-end: 20px;
-}
-
-.homeImg {
-  width: 500px;
+nav a{
+  display: block;
+  background: lightblue;
+  border: 1px solid blue;
+  padding: 1em;
   text-align: center;
-  margin-top: 10px;
-}
-
-.main {
-  padding: 20px;
 }
