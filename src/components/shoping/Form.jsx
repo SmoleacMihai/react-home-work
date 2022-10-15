@@ -26,6 +26,7 @@ const Form = () => {
       <div>Shopping form</div>
       <form
         onSubmit={handleSubmit(onSubmit)}
+        className="formular"
       >
         {formModel.map(element => (
           <FormInputs
@@ -34,7 +35,7 @@ const Form = () => {
             register={register}
             errors={errors}
           />
-          ))}
+        ))}
         <input
           type={'submit'}
         />
