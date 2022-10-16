@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavBar } from "../components/NavBar";
 import Form from '../components/shoping/Form';
-import allProducts from "../database/products/list";
 
 export default function ShoppingCartPage() {
   const getFromLocalStorage = () => {
@@ -43,7 +42,9 @@ export default function ShoppingCartPage() {
         )
       }
       <hr />
-      <Form />
+      {
+        !(products.length === 0) ? <Form /> : null
+      }
       <hr />
       <pre>
         {JSON.stringify(products, undefined, 2)}

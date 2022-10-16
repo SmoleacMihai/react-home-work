@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import formModel from '../../static/formModel.json';
+import formModel from '../../static/formModels.js';
 import FormInputs from '../formInputs/FormInputs';
 
 const Form = () => {
